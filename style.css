@@ -1,4 +1,5 @@
 .box {
+    display: block;
     width: 200px;
     height: 200px;
     position: absolute;
@@ -14,4 +15,26 @@
 .box3 {
     background-color: green;
     /* No z-index specified */
+}
+
+/*-----------------------------------------------------------------------------------------------------------------------*/
+
+.main-container{
+    position: absolute;
+    top: 300px;
+    height: 300px;
+    width: 300px;
+    background-color: black;
+    left: 20%;
+    border-radius: 50%;
+}
+
+.main-container::before{
+    content: "hey ram";
+    position: absolute;
+    height: 4px;
+    width: 50%;
+    background-color: yellow;
+    top: 50%;
+    
 }
